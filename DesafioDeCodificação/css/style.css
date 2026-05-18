@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+table{
+    border-collapse: collapse;
+    margin: 10px;
+}
+body{
+   background-image: url(../img/background.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+h1{
+    margin: 10px;
+    border: 3px solid white;
+    padding: 30px;
+    border-radius: 50px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+/* Elementos do Cabeçalho (theader) */
+.relogio{
+    font-size: 50px;
+    float: right;
+}
+th{
+    text-align: left;
+    border: 1px none #dddddd;
+    padding: 8px;
+    background-color: blue;
+    color: white;
+}
+.departureicon{
+    float: left;
+    border: solid 2px;
+    border-radius: 5px;
+    padding: 8px;
+    height: 42px;
+    margin: 2px;
+}
+/* Fim do Cabeçalho (theader) */
+
+/* Elementos do corpo (tbody) */
+table{
+    border: 3px solid hsl(240, 100%, 50%);
+    background-color: hsl(0, 0%, 100%);
+}
+td,tr{
+    text-align: center;
+    border: 1px none #dddddd;
+    padding: 8px;
+    color: hsl(244, 100%, 30%);
+}
+i{
+    font-size: small;
+}
+tr:nth-child(odd){
+    background-color: #dddddd;
+}
+span{
+    background-color: hsla(120, 100%, 50%, 0.418);
+    padding: 2px;
+}
+.naoprevisto{
+    background-color: hsl(0, 100%, 50%);
+    padding: 2px;
+    color: white;
+}
+/* Fim do corpo (tbody) */
+
+/* Elementos do Rodapé (tfoot) */
+.footertext{
+    font-size: xx-small;
+    text-align: center;
+}
+.thfooter{
+    text-align: center;
+    font-size: larger;
+}
+.wifilogo{
+    float: right;
+    position: relative;
+}
+.redevoa{
+    float: left;
+    position: relative;
+    top: 10px;
+}
