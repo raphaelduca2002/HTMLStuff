@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 1.5rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: green;
+    
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    transition: all 0.4s ease;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 25px auto;
+    border: 5px solid black;
+    width: 500px;
+    border-radius: 25px;
+    background-color: #000000;
+}
+
+.lista h2 {
+    color: green;
+}
+
+.headercontent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headercontent h1, .headercontent p {
+    margin: 10px;
+}
+
+.imagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.imagens img {
+    width: 300px;
+    height: 300px;
+    border: none;
+    border-radius: 30px;
+}
+
+.imagenscontent {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 25px;
+    background-color: black;
+    color: green;
+    margin: 10px;
+}
+audio {
+    margin: 10px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 50px;
+    box-shadow: 0 0 20px 8px rgba(21, 255, 0, 0.3);
+}
+
+audio::-webkit-media-controls-panel
+{
+    background-color: #000000;
+}
+
+audio::-webkit-media-controls-current-time-display
+{
+    color: green;
+}
+
+audio::-webkit-media-controls-time-remaining-display
+{
+    color: green;
+}
+
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-timeline-container
+{
+    background-color: green;
+    border-radius: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* Mudar a cor dos botões */
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-mute-button
+{
+    background-color: green;
+    border-radius: 50%;
+    color: green;
+}
+
+header {
+    background-color: gray;
+}
+
+li:first-child {
+    color: blue;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 15px;
+}
+
+li:last-child {
+    color: red;
+    margin-bottom: 15px;
+}
+
+li:nth-child(odd) {
+    background-color: rgb(117, 255, 53);
+}
+
+li:active {
+    color: green;
+}
+
+li {
+    padding: 10px;
+    width: 250px;
+    list-style: none;
+    border-bottom: 0.5px solid grey;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: white;
+}
+
+li:hover {
+    background-color: gray;
+    text-decoration: underline;
+}
+
+@media (max-width: 1150px) {
+    .imagens {
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagens img {
+        width: 350px;
+        height: 350px;
+    }
+}
