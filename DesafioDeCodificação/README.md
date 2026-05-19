@@ -4,4 +4,4 @@ O Professor do meu curso me deu uma tarefa de codificar a imagem de exemplo em u
 
 # Link de acesso (GitHub pages)
 
-https://raphaelduca2002.github.io/HTMLStuff/DesafioDeCodificação/index.html
+https://raphaelduca2002.github.io/HTMLStuff/DesafioDeCodificação
