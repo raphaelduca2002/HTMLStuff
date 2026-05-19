@@ -1,6 +1,6 @@
 # CSS
 
-Teste de cards css
+Teste de elementos responsivos em HTML e CSS
 
 # Link de acesso (GitHub pages)
 
