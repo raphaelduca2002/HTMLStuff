@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+
+header {
+    padding: 10px 0;
+    text-align: center;
+    background-image: url("../img/fundo-topo.jpg");
+}
+
+header h1 {
+    margin: 0;
+    height: 84px;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #6dd432;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+    padding-right: 30px;
+    background-image: url("../img/patinha-preta.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+#itemContato {
+    background-image: none;
+}
+
+nav {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.secaosobre {
+    background-color: #bdff9c;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    gap: 75px;
+}
+
+#tituloprodutos {
+    text-align: center;
+    padding: 15px;
+}
+
+.sobrenos {
+    max-width: 400px;
+    text-align: justify;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+figure {
+    border: 8px solid #bdff9c;
+    border-radius: 25px;
+    padding: 10px;
+    height: 125px;
+}
+
+figure img {
+    height: 100%;
+}
+
+.flex-container {
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.comprarbtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    background-color: #bdff9c;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 10px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.comprarbtn:hover {
+    background-color: #55ff00;
+    color: #fff;
+}
+
+.comprarbtn:active {
+    background-color: #6dd432;
+    color: #fff;
+}
+
+@media (max-width: 800px) {
+    * {
+        max-width: 100%;
+    }
+    .secaosobre {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    nav li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px 0 5px 35px;
+        background-image: url("../img/patinha-preta.png");
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 22px 22px;
+    }
+
+    #itemContato {
+        background-image: url("../img/patinha-preta.png");
+        padding-left: 35px;
+        background-position: left center;
+    }
+
+}
