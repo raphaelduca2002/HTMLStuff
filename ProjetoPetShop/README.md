@@ -1,6 +1,6 @@
 # Pet Shop
 
-Projeto de um website simulando um pet shop 
+Website simples utilizando elementos semânticos, CSS e algumas práticas de responsividade.
 
 # Link de acesso (GitHub pages)
 
