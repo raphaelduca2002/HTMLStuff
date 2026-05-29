@@ -4,4 +4,4 @@ Website simples utilizando elementos semânticos, CSS e algumas práticas de res
 
 # Link de acesso (GitHub pages)
 
-https://raphaelduca2002.github.io/HTMLStuff/ProjetoPetShop
+https://raphaelduca2002.github.io/HTMLStuff/ProjetoPetShop/index.html
