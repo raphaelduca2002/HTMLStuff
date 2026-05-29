@@ -1,10 +1,13 @@
+/* Dados Iniciais do CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     max-width: 100%;
 }
+/* fim dos dados iniciais do CSS */
 
+/* Estilização do corpo, header e nav */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #ffffff;
@@ -48,6 +51,9 @@ nav {
     text-align: center;
 }
 
+/* Fim da estilização do corpo, header e nav */
+
+/* Estilização da sessão "SOBRE NÓS" */
 .secaosobre {
     background-color: #bdff9c;
     display: flex;
@@ -66,27 +72,45 @@ nav {
     text-align: justify;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
+/* Fim da estilização da sessão "SOBRE NÓS" */
+
+
+.texto-centralizado {
     text-align: center;
-}
-
-figure {
-    border: 8px solid #bdff9c;
-    border-radius: 25px;
+    margin: 10px;
     padding: 10px;
-    height: 125px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-figure img {
-    height: 100%;
+/* Estilização da sessão "PRODUTOS" */
+
+.produtos {
+    padding: 30px;
+}
+
+.produto figure {
+    border: 6px solid #bdff9c;
+    padding: 10px;
+    line-height: 160px;
+    margin: 0 0 15px 0;
+    text-align: center;
+    width: 200px;
 }
 
 .flex-container {
     padding: 10px;
     display: flex;
     justify-content: space-evenly;
+    padding: 30px;
+}
+
+.produto {
+    text-align: center;
+}
+
+.produto figure img {
+    vertical-align: middle;
 }
 
 .comprarbtn {
@@ -112,19 +136,124 @@ figure img {
     color: #fff;
 }
 
-@media (max-width: 800px) {
+/* Fim da estilização da sessão "PRODUTOS" */
+
+/* Estilização da sessão "SERVIÇOS" */
+
+.serviços {
+    background-color: #bdff9c;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    align-items: center;
+    gap: 75px;
+}
+
+.serviços-flex {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    text-align: justify;
+}
+.serviços-imagens {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.serviços-imagens img {
+    margin: 1px;
+    padding: 1px;
+    display: flex;
+}
+
+/* Fim da estilização da sessão "SERVIÇOS" */
+
+/* Estilização da sessão "CONTATO" */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.contato-flex {
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+#wip-text {
+    text-align: center;
+    padding: 15px;
+    color: red;
+    position: relative;
+    bottom: 325px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Responsividade */
+
+@media (max-width: 999px) {
     * {
         max-width: 100%;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
     .secaosobre {
         flex-direction: column;
         align-items: center;
     }
 
+    .serviços {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .serviços p {
+        text-align: justify;
+    }
+
+    .serviços-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .serviços-imagens {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     .flex-container {
         flex-direction: column;
         align-items: center;
         gap: 15px;
+    }
+
+    .contato-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #wip-text {
+        position: relative;
+        bottom: 550px;
     }
 
     nav li {
@@ -134,14 +263,13 @@ figure img {
         padding: 5px 0 5px 35px;
         background-image: url("../img/patinha-preta.png");
         background-repeat: no-repeat;
-        background-position: left center;
-        background-size: 22px 22px;
+        background-position: right;
     }
 
     #itemContato {
         background-image: url("../img/patinha-preta.png");
         padding-left: 35px;
-        background-position: left center;
+        background-position: right;
     }
 
 }
