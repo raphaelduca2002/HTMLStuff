@@ -186,10 +186,11 @@ nav {
 #wip-text {
     text-align: center;
     padding: 15px;
+    background-color: #000000;
     color: red;
     position: relative;
     bottom: 325px;
-    animation: blink 1s infinite;
+    animation: blink 3s infinite;
 }
 
 @keyframes blink {
