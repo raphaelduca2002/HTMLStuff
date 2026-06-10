@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Mary & Gabi Petshop</title>
 </head>
@@ -16,14 +17,14 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Produtos</a></li>
-            <li><a href="#">Serviços</a></li>
-            <li id="itemContato"><a href="#">Contato</a></li>
+            <li><a href="#Sobre">Sobre</a></li>
+            <li><a href="#Produtos">Produtos</a></li>
+            <li><a href="#Serviços">Serviços</a></li>
+            <li id="itemContato"><a href="#Contato">Contato</a></li>
         </ul>
     </nav>
     <main>
-        <section>
+        <section id="Sobre">
             <div class="secaosobre">
                 <div class="sobrenos">
                     <h1>SOBRE NÓS</h1>
@@ -38,8 +39,7 @@
             </div>
             </div>
         </section>
-        <br>
-        <section>
+        <section id="Produtos">
             <div class="produtos">
                 <h1 class="texto-centralizado">PRODUTOS</h1>
                 <p class="texto-centralizado">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum magnam
@@ -79,7 +79,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="Serviços">
             <div class="serviços">
                 <div class="serviços-flex">
                     <h1>SERVIÇOS</h1>
@@ -106,7 +106,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="Contato">
             <div class="container">
                 <div class="texto-centralizado">
                     <h1>CONTATO</h1>
@@ -120,30 +120,73 @@
                 </div>
                 <div class="contato-flex">
                     <div class="col">
-                        <form action="">
-                            <label for="nome">Nome:</label>
-                            <input type="text" id="nome" name="nome" required>
-                            <br><br>
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
-                            <br><br>
-                            <label for="mensagem">Mensagem:</label>
-                            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-                            <br><br>
-                            <button type="submit">Enviar</button>
-                        </form>
+                        <fieldset>
+                            <form action="" method="get">
+                                <label for="nome">
+                                    <strong>Nome:</strong>
+                                    <input type="text" name="" id="nome" placeholder="Insira o seu nome completo.">
+                                </label>
+                                <label for="email">
+                                    <strong>E-mail:</strong>
+                                    <input type="email" name="" id="mail" placeholder="exemplo@dominio.com.br">
+                                </label>
+                                <label for="tele">
+                                    <strong>Telefone:</strong>
+                                    <input type="tel" name="" id="tele" placeholder="(11)0000-0000">
+                                </label>
+                                <label for="assunto">
+                                    <strong>Assunto:</strong>
+                                    <input type="text" name="" id="assunto" placeholder="Insira o assunto.">
+                                </label>
+                                <label for="msg">
+                                    <strong>Mensagem:</strong>
+                                    <textarea name="msg" id="msg"
+                                        placeholder="Insira a sua mensagem aqui..."></textarea>
+                                </label>
+                                <div>
+                                    <button class="btn-pata">
+                                        <img src="img/patinha-preta.png" alt="Patinha" srcset="">
+                                        Enviar
+                                    </button>
+                                </div>
+                            </form>
+                        </fieldset>
                     </div>
                     <div class="col">
-                        <iframe></iframe>
-                        <p>Vai ter um iframe dahora aqui eventualmente</p>
-                        <p>Endereço: Lorem da Silva, 1695 - Jardim Ipsum</p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.383583675416!2d-46.768516524825976!3d-23.697992278706156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5212f9627de5%3A0x1c5ccd29c1a3e96a!2sEtec%20Jardim%20%C3%82ngela!5e0!3m2!1spt-BR!2sbr!4v1779924490784!5m2!1spt-BR!2sbr"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p>Endereço: Estrada da Baronesa, 1695 - Jardim Kagohara</p>
+                        <p>CEP: 04941-175</p>
+                        <p>TEL: (11) 6666-7777</p>
                     </div>
                 </div>
             </div>
         </section>
-        <h1 id="wip-text"><b>SEÇÃO DE CONTATO ESTÁ EM CONSTRUÇÃO (WIP)</b></h1>
     </main>
     <footer>
+        <div class="footer-flex">
+            <div class="redes-sociais">
+                <h2>Minhas Redes:</h2>
+                <div class="icons">
+                    <a href="https://github.com/raphaelduca2002" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/raphaelduca" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="componente-e-desenvolvedor">
+                <h2>Componente:</h2>
+                <p>Programação Web I</p>
+            </div>
+            <div class="componente-e-desenvolvedor">
+                <h2>Desenvolvedor:</h2>
+                <p>Raphael Duca</p>
+            </div>
+        </div>
         <p class="texto-centralizado">© 2026 Nome da Empresa. Todos os direitos reservados.</p>
     </footer>
 </body>
