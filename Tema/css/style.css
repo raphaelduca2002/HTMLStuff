@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container-light {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.container-darkmode {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #363636;
+    transition: background-color 0.3s ease;
+}
+
+.card-light {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffffff;
+    color: #000000;
+    max-width: 300px;
+    height: 175px;
+    padding: 25px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 0 #000000;
+    transition: background-color 0.3s ease;
+	text-align: center;
+}
+
+.card-darkmode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #424242;
+    color: #ffffff;
+    max-width: 300px;
+    height: 175px;
+    padding: 25px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 0 #000000;
+    transition: background-color 0.3s ease;
+	text-align: center;
+}
+
+.btnTema-light{
+    background-color: #0000ff;
+    color: #ffffff;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btnTema-light:hover {
+    transition: transform 0.2s ease;
+    transform-origin: center center;
+    transform: scale(1.05);
+    background-color: #0000d2;
+    transition: background-color 0.3s ease;
+}
+
+.btnTema-light:active {
+    transition: transform 0.2s ease;
+    transform-origin: center center;
+    transform: scale(1.10);
+    background-color: #000050;
+    transition: background-color 0.3s ease;
+}
+
+.btnTema-darkmode {
+    background-color: #272727;
+    color: #ffffff;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btnTema-darkmode:hover {
+    transition: transform 0.2s ease;
+    transform-origin: center center;
+    transform: scale(1.05);
+    background-color: #313131;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.btnTema-darkmode:active {
+    transition: transform 0.2s ease;
+    transform-origin: center center;
+    transform: scale(1.10);
+    background-color: #353535;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
