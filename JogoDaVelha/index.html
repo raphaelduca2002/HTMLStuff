@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Velha</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="col-1">
+            <div class="velhacontainer">
+                <header>
+                    <h1>Jogo da Velha</h1>
+                </header>
+                <h2 id="statusmensagem">Vez do jogador: <span>X</span></h2>
+                <div class="tabuleiro" id="tabuleiro">
+                    <button data-index="0" class="celula"></button>
+                    <button data-index="1" class="celula"></button>
+                    <button data-index="2" class="celula"></button>
+                    <button data-index="3" class="celula"></button>
+                    <button data-index="4" class="celula"></button>
+                    <button data-index="5" class="celula"></button>
+                    <button data-index="6" class="celula"></button>
+                    <button data-index="7" class="celula"></button>
+                    <button data-index="8" class="celula"></button>
+                </div>
+                <div>
+                    <button class="reiniciarbtn" id="reiniciarbtn">Reiniciar Jogo</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="contador-container">
+                <p><b>Jogos realizados:</b> <span id="jogosrealizados">0</span></p>
+                <p><b>Jogos ganhos pelo jogador X:</b> <span id="vitoriaJogadorX">0</span></p>
+                <p><b>Jogos ganhos pelo jogador O:</b> <span id="vitoriaJogadorO">0</span></p>
+                <p><b>Empates (deu velha):</b> <span id="empates">0</span></p>
+                <p><b>Vezes reiniciadas:</b> <span id="reinicios">0</span></p>
+            </div>
+            <div class="seletor-container">
+                <label for="selecionarJogador"><b>Escolha o jogador inicial:</b></label>
+                <select id="selecionarJogador" class="seletor">
+                    <option value="X">Jogador X</option>
+                    <option value="O">Jogador O</option>
+                </select>
+                <button id="confirmarbtn" class="confirmarbtn">Confirmar</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/velha.js"></script>
+</body>
+
+</html>
