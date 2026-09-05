@@ -19,12 +19,16 @@ body {
     justify-content: center;
 }
 
+#statusmensagem {
+    text-align: center;
+}
+
 .velhacontainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    box-shadow: 0px 0px 10px 3px #949494;
+    box-shadow: 0px 0px 10px 0px #949494;
     border-radius: 25px;
     width: 500px;
     height: 600px;
@@ -35,7 +39,7 @@ body {
 .contador-container {
     font-size: 20px;
     background-color: #ffffff;
-    box-shadow: 0px 0px 10px 3px #949494;
+    box-shadow: 0px 0px 10px 0px #949494;
     border-radius: 25px;
     padding: 25px;
     display: flex;
@@ -47,7 +51,7 @@ body {
 .seletor-container {
     background-color: #ffffff;
     font-size: 20px;
-    box-shadow: 0px 0px 10px 3px #949494;
+    box-shadow: 0px 0px 10px 0px #949494;
     padding: 25px;
     border-radius: 25px;
     display: flex;
@@ -65,15 +69,17 @@ body {
 
 .seletor:hover {
     border: #247ec9 2px solid;
-    box-shadow: 0px 0px 10px 3px #afcde6;
+    box-shadow: 0px 0px 10px 0px #afcde6;
     transition: all ease 0.3s;
+    background-color: #ffffff;
 }
 
 .seletor:focus {
     outline: none;
     border: #247ec9 2px solid;
     transition: all ease 0.3s;
-    box-shadow: 0px 0px 10px 3px #afcde6;
+    box-shadow: 0px 0px 10px 0px #afcde6;
+    background-color: #ffffff;
 }
 
 .col-1 {
@@ -175,6 +181,8 @@ button:active {
         justify-content: center;
     }
     .main-container {
+        margin: 20px;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -209,6 +217,7 @@ button:active {
     .contador-container {
         max-width: 100%;
         height: auto;
+        text-align: center;
     }
 
     .tabuleiro {
