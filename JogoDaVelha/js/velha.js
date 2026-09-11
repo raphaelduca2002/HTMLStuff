@@ -126,6 +126,14 @@ function reiniciarJogo() {
 
 function confirmarJogador() {
     jogadorAtual = selecionarJogador.value;
+    
+    if (jogadorAtual === "random") {
+        const string1 = "X";
+        const string2 = "O";
+        const randomString = Math.random() < 0.5 ? string1 : string2;
+        jogadorAtual = randomString
+    };
+
     statusMensagem.innerHTML = `Vez do jogador: <span>${jogadorAtual}</span>`;
     jogoAtivo = true;
 
