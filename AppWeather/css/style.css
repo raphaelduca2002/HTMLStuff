@@ -178,21 +178,12 @@ input::placeholder {
 
 @media (max-width: 500px) {
     .container {
-        width: 100%;
-    }
-
-    .search-box {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        height: min-content;
-        background-color: #004fa8;
-        border-radius: 18px;
-        padding: 5px 10px;
+        width: calc(100% - 32px);
     }
 
     .search-box input {
+        flex: 1;
+        min-width: 0;
         height: 100%;
         border: none;
         background-color: #004fa8;
@@ -206,12 +197,9 @@ input::placeholder {
     }
 
     .search-box button {
-        border: none;
-        background-color: #0eb3ff44;
-        font-size: 24px;
-        cursor: pointer;
-        color: gold;
-        border-radius: 100%;
-        padding: 5px 10px;
+        flex-shrink: 0;
+        width: 40px;
+        height: 40px;
+        padding: 0;
     }
 }
