@@ -164,7 +164,7 @@ function novoJogo() {
 btnNovoJogo.addEventListener("click", novoJogo);
 
 btnReiniciar.addEventListener("click", () => {
-    iniciarJogo(false);
+    iniciarJogo(true);
 });
 
-iniciarJogo(false);
+iniciarJogo(true);
